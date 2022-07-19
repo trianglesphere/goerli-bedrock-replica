@@ -40,4 +40,4 @@ function wait_up {
 docker-compose up -d l2
 wait_up $L2_URL
 
-L1_RPC_URL=$(cat .config/l1_rpc_url.txt) docker-compose up -d op-node
+L1_RPC_URL=$(cat .config/l1_rpc_url.txt) BOOTNODES=$(cat .config/bootnode) docker-compose up -d op-node

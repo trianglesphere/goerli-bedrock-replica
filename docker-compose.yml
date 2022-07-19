@@ -32,7 +32,7 @@ services:
   op-node:
     depends_on:
       - l2
-    image: local-op-node:latest
+    image: optimismjg/op-node:latest
     command: >
       op-node
       --l1=${L1_RPC_URL}
